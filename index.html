@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats Audio</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+</head>
+<body>
+    <div id="pagepiling">
+	    <div class="section" id="section1">
+            <header class="header">
+              <div class="wraper"></div>
+                <div class="container">
+                  <div class="header__body">
+                    <ul class="header_list">
+                        <li>
+                          <a href="#">Колонки</a>
+                        </li>
+                        <li>
+                          <a href="#">Навушники</a>
+                        </li>
+                        <li>
+                          <a href="#">Підтримка</a>
+                        </li>
+                      </ul>
+                  <div class="header__burger">
+                    <span></span>
+                  </div>
+                  <nav class="header__menu">
+                    <ul class="header__list">
+                      <li>
+                        <a href="#" class="header__link">Колонки</a>
+                      </li>
+                      <li>
+                        <a href="#" class="header__link">Навушники</a>
+                      </li>
+                      <li>
+                        <a href="#" class="header__link">Підтримка</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+        <div class="header-content">
+        <div class="header-logo">
+            <p>Beats Solo³ Wireless</p>
+            <h1>Створені для звука Налаштовані на емоції</h1>
+            <div class="header-price">
+            <button>Купити</button>
+            <p>4999,00 грн.</p>
+        </div>
+        <div class="header-info">
+            <div class="header-icon">
+                <img src="./images/icon1.png" alt="">
+                <img src="./images/icon2.png" alt="">
+                <img src="./images/icon3.png" alt="">
+            </div>
+            <div class="header-info-p">
+                <p>Бездоганний звук</p>
+                <p>До 40 годин роботи від акумулятора</p>
+                <p>Технологія Fast Fuel</p>
+            </div>
+        </div>
+        </div>
+        <div class="header-garniture">
+            <img src="./images/garnitura-one.png" alt="">
+        </div>
+    </div>
+    </header>
+	    </div>
+	    <div class="section" id="section2">
+        <div class="section-content">
+        <img src="./images/naushniki-beats-solo-pro-wireless-s-shumopodavleniem-2 1.png" class="section2-garnitura" alt="">
+        <div class="section2-content">
+          <!-- <img src="./images/icon-logo-section.png" alt=""> -->
+          <div class="section2-content-inf">
+          <h2>ТIЛЬКИ МУЗИКА НIЯКИХ ШУМIВ</h2>
+          <span class="span"></span>
+          <p>Чистий АНК безперервно розпізнає і блокує існуючі звуки, автоматично реагуючи на зміну посадки і відтворення музики.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+	    <div class="section" id="section3"></div>
+	    <div class="section" id="section4"></div>
+	</div>
+    <script src="./js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+		    $('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+	    });
+    </script>
+</body>
+</html>
