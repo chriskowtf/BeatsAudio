@@ -7,7 +7,7 @@
     <title>Beats Audio</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.min.css" /> -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
@@ -82,23 +82,37 @@
         <div class="section-content">
         <img src="./images/naushniki-beats-solo-pro-wireless-s-shumopodavleniem-2 1.png" class="section2-garnitura" alt="">
         <div class="section2-content">
-          <!-- <img src="./images/icon-logo-section.png" alt=""> -->
+          <div class="section2-content-images">
+            <img src="./images/icon-logo-section.png" alt="">
           <div class="section2-content-inf">
           <h2>ТIЛЬКИ МУЗИКА НIЯКИХ ШУМIВ</h2>
           <span class="span"></span>
           <p>Чистий АНК безперервно розпізнає і блокує існуючі звуки, автоматично реагуючи на зміну посадки і відтворення музики.</p>
         </div>
         </div>
+        </div>
       </div>
     </div>
-	    <div class="section" id="section3"></div>
+	    <div class="section" id="section3">
+        <div class="section-content2">
+          <img src="./images/naushniki-beats-solo-pro-wireless-s-shumopodavleniem-2 1.png" class="section2-garnitura" alt="">
+          <div class="section2-content">
+            <!-- <img src="./images/icon-logo-section.png" alt=""> -->
+            <div class="section2-content-inf">
+            <h2>ЗВУКОВЕ КАЛIБРУВАННЯ В РЕЖИМI РЕАЛЬНОГО ЧАСУ </h2>
+            <span class="span"></span>
+            <p> Система Pure ANC підбирає оптимальні параметри відтворення і забезпечує чистоту і широкий діапазон звуку, а також передачу найдрібніших відтінків голосів виконавців, щоб ви отримали справжнє задоволення від прослуховування.</p>
+          </div>
+          </div>
+        </div>
+      </div>
 	    <div class="section" id="section4"></div>
 	</div>
     <script src="./js/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script> -->
+    <!-- <script type="text/javascript">
 		$(document).ready(function() {
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
@@ -129,6 +143,13 @@
 				$('#examplesList').hide();
 			});
 	    });
-    </script>
+      $(document).ready(function() {
+   if (window.innerWidth > 320) {
+       $('#pagepiling').pagepiling();
+   } else {
+     // do something else or do nothing
+   }
+});
+    </script> -->
 </body>
 </html>
